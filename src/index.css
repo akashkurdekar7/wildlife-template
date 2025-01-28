@@ -249,7 +249,7 @@ img {
   content: "";
   width: 0;
   height: 2px;
-  background-color: var(--white-color);
+  background-color: var(--first-color);
   position: absolute;
   left: 0;
   bottom: -0.5rem;
@@ -290,6 +290,40 @@ img {
 .active-link::after {
   width: 50%;
   color: var(--white-color);
+}
+.scroll-up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--white-color);
+  color: var(--first-color);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, visibility 0.3s ease, color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.scroll-up.show-scroll {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-up-link {
+  color: inherit;
+  font-size: 1.25rem;
+}
+
+.scroll-up:hover {
+  background-color: var(--first-color);
+  color: var(--white-color);
+  box-shadow: 0px 0px 50px var(--white-color);
 }
 
 /*=============== HOME ===============*/

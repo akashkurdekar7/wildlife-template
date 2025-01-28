@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { BsArrowUp } from "react-icons/bs";
 import { RiMenu4Line, RiCloseLine } from "react-icons/ri"; // Importing React Icons for menu toggle
 
 const Navbar = () => {
@@ -127,7 +128,7 @@ const Navbar = () => {
       {/* Scroll Up Button */}
       <div id="scroll-up" className="scroll-up">
         <a href="#home" className="scroll-up-link">
-          ↑
+          <BsArrowUp />
         </a>
       </div>
     </header>
